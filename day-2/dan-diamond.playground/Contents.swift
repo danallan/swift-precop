@@ -3,7 +3,8 @@
 //
 // Diamonds!!
 
-let MAX_SIZE = 40
+// MAX_SIZE is the number of lines in a diamond
+let MAX_SIZE = 11
 
 for line in 0 ..< MAX_SIZE
 {
