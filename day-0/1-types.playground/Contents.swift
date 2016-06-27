@@ -38,5 +38,7 @@ var letter: Character = "a"
 // you can do this, but do you REALLY want to
 var 💩: String = "poo"
 
-// We've already seen strings. If you were a programmer, 
+print(💩)
+
+// We've already seen strings. If you were a programmer,
 // how would you create a string?
