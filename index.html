@@ -31,7 +31,7 @@
         <h3>
 <a id="jump-to" class="anchor" href="#jump-to" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Jump to:</h3>
 
-<p><strong>Week 0:</strong> <a href="#day-0">Day 0</a></p>
+<p><strong>Week 0:</strong> <a href="#day-0">Day 0</a>, <a href="#day-1">Day 1</a></p>
 
 <h2>
 <a id="description" class="anchor" href="#description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Description</h2>
@@ -157,7 +157,46 @@ let NUM_LINES = 11
 <h3>
 <a id="day-1" class="anchor" href="#day-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Day 1</h3>
 
-<p>Continue Swift basics. Looping constructs.</p>
+<p>Loops, arrays, functions, optionals, tuples.</p>
+
+<h4>
+<a id="source" class="anchor" href="#source" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Source</h4>
+
+<ol>
+<li>Diamond staff solutions. <a href="https://raw.githubusercontent.com/danallan/swift-precop/master/day-1/diamond-cheng.playground/Contents.swift">Cheng, TF from last year</a>, <a href="https://raw.githubusercontent.com/danallan/swift-precop/master/day-1/diamond-dan.playground/Contents.swift">Dan</a>.</li>
+<li><a href="https://raw.githubusercontent.com/danallan/swift-precop/master/day-1/2-arrays.playground/Contents.swift">Arrays</a></li>
+<li><a href="https://raw.githubusercontent.com/danallan/swift-precop/master/day-1/3-functions.playground/Contents.swift">Functions</a></li>
+<li><a href="https://raw.githubusercontent.com/danallan/swift-precop/master/day-1/4-optionals.playground/Contents.swift">Optionals</a></li>
+<li><a href="https://raw.githubusercontent.com/danallan/swift-precop/master/day-1/zip-tuples.playground/Contents.swift"><code>zip</code> student-supplied solution, modified to include tuples</a></li>
+</ol>
+
+<h4>
+<a id="homework-1" class="anchor" href="#homework-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Homework</h4>
+
+<ol>
+<li>Adapt your <code>zip</code> solution (finishing it, if necessary!) to return a type of <code>[(Int?, Int?)]</code>, which will allow two lists of different lengths. You may optionally provide names to the tuple, like <code>[(zeroth: Int?, first: Int?)]</code>.</li>
+<li>Create a simple gradebook program based on dictionaries.
+
+<ol>
+<li>First, read Apple's documentation on <a href="https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/CollectionTypes.html#//apple_ref/doc/uid/TP40014097-CH8-ID113">dictionaries</a>.</li>
+<li>Second, re-familiarize yourself with the gradebook functionality from today's <a href="Functions%20source">https://raw.githubusercontent.com/danallan/swift-precop/master/day-1/3-functions.playground/Contents.swift</a> from class to use dictionaries. Specifically, note that we have implemented two functions: <code>printGradeCount()</code> and <code>average()</code>. We intentionally did not go over dictionaries in class so that you gain some experience reading documentation to achieve a particular programming goal!</li>
+<li>Write a program that allows categorization of grades. For example, a class might have <code>exam</code> grades, <code>homework</code> grades, <code>participation</code> grades, etc. You could model this with a dictionary by having a dictionary key represent every category.</li>
+<li>For this program, <code>printGradeCount()</code> should accept a dictionary. It should then print the number of grades for each category.</li>
+<li>
+<code>average()</code> should compute the average for every category. For example:</li>
+</ol>
+
+<pre><code>printGradeCount(["exams": [100, 90], "homework": [50, 85, 67]])
+</code></pre>
+
+<p>Should result in:</p>
+
+<pre><code>exams: 2
+homework: 3
+</code></pre>
+</li>
+<li>More to come, check back soon!</li>
+</ol>
 
 <h3>
 <a id="day-2" class="anchor" href="#day-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Day 2</h3>
