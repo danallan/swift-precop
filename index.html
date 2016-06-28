@@ -183,18 +183,20 @@ let NUM_LINES = 11
 <li>First, read Apple's documentation on <a href="https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/CollectionTypes.html#//apple_ref/doc/uid/TP40014097-CH8-ID113">dictionaries</a>.</li>
 <li>Second, re-familiarize yourself with the gradebook functionality from today's <a href="https://raw.githubusercontent.com/danallan/swift-precop/master/day-1/3-functions.playground/Contents.swift">Functions source</a> from class to use dictionaries. Specifically, note that we have implemented two functions: <code>printGradeCount()</code> and <code>average()</code>. We intentionally did not go over dictionaries in class so that you gain some experience reading documentation to achieve a particular programming goal!</li>
 <li>Write a program that allows categorization of grades. For example, a class might have <code>exam</code> grades, <code>homework</code> grades, <code>participation</code> grades, etc. You could model this with a dictionary by having a dictionary key represent every category.</li>
-<li>For this program, <code>printGradeCount()</code> should accept a dictionary. It should then print the number of grades for each category.</li>
-<li>
-<code>average()</code> should compute the average for every category. For example:</li>
+<li>For this program, <code>printGradeCount()</code> should accept a dictionary and it should then print the number of grades for each category. <code>average()</code> should accept a dictionary and show the grade average for every category For example:</li>
 </ol>
 
-<pre><code>printGradeCount(["exams": [100, 90], "homework": [50, 85, 67]])
+<pre><code>let grades = ["exams": [100, 90], "homework": [50, 85, 67]]
+printGradeCount(grades)
+average(grades)
 </code></pre>
 
-<p>Should result in:</p>
+<p>Should print:</p>
 
 <pre><code>exams: 2
 homework: 3
+exams: 95
+homework: 67.3333333333333
 </code></pre>
 </li>
 <li>
