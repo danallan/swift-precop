@@ -234,13 +234,11 @@ homework: 67.3333333333333
 <p>Try to complete all of the below problems.</p>
 
 <ol>
-<li>Create a <code>reduce</code> function that is higher-order. It should accept an array of doubles (<code>[Double]</code>), an initial value <code>i</code> of type <code>Double</code>, and a function <code>f</code>, which itself takes as parameter two <code>Double</code> values and returns a <code>Double</code>. The function calls <code>f</code> first with the initial condition and the first element in the list, and stores the output. It then takes the output, and calls <code>f</code> with the output and the next element in the list, and so on. In short, it combines all of the elements in the list to a single value by relying on a function <code>f</code> to do the combination. Below is a sample of how you might call the function, which when run should return the value <code>10.0</code>, since it sums the values in the list.</li>
-</ol>
-
-<pre><code>reduce([1.0, 2.0, 3.0, 4.0], i: 0.0, f: { $0 + $1 })
-</code></pre>
-
-<ol>
+<li>Create a <code>reduce</code> function that is higher-order. It should accept an array of doubles (<code>[Double]</code>), an initial value <code>i</code> of type <code>Double</code>, and a function <code>f</code>, which itself takes as parameter two <code>Double</code> values and returns a <code>Double</code>. The function calls <code>f</code> first with the initial condition and the first element in the list, and stores the output. It then takes the output, and calls <code>f</code> with the output and the next element in the list, and so on. In short, it combines all of the elements in the list to a single value by relying on a function <code>f</code> to do the combination. Below is a sample of how you might call the function, which when run should return the value <code>10.0</code>, since it sums the values in the list.
+<code>
+reduce([1.0, 2.0, 3.0, 4.0], i: 0.0, f: { $0 + $1 })
+</code>
+</li>
 <li>Use the <code>mapper</code>, <code>filter</code>, and <code>reduce</code> HOFs to achieve the following:
 
 <ol>
