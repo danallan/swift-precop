@@ -249,7 +249,7 @@ reduce([1.0, 2.0, 3.0, 4.0], i: 0.0, f: { $0 + $1 })
 </li>
 </ol>
 </li>
-<li>More to come soon!</li>
+<li>Write a function called <code>quickSort</code> that takes in an unsorted <code>Double</code> array and outputs a sorted <code>[Double]</code>. <a href="https://www.khanacademy.org/computing/computer-science/algorithms/quick-sort/a/overview-of-quicksort">Quicksort works</a> by selecting a "pivot" element, partitioning the array into three categories: all elements smaller than or equal to the pivot, the pivot, and all elements larger than the pivot, and then recursively applying quicksort to each category. Because it is recursive, quicksort has a base case when the array size is 1: it should just return the array. As a small hint, this function should use at least one of the higher order functions we discussed in class!</li>
 <li>Write a function, called <code>curry</code>, that accepts a function that normally requires two <code>Double</code> parameters (like <code>pow</code>), and allows partial application of that function. In other words, although we'd normally call <code>pow(x, y)</code>, after we pass it to curry we should get a new function, <code>exp</code>, that allows <code>exp(x)(y)</code>. More specifically, although we'd normally run <code>pow(2, 3)</code>, perhaps we only want to partially apply the function as follows:</li>
 </ol>
 
