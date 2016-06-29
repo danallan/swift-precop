@@ -31,7 +31,7 @@
         <h3>
 <a id="jump-to" class="anchor" href="#jump-to" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Jump to:</h3>
 
-<p><strong>Week 0:</strong> <a href="#day-0">Day 0</a>, <a href="#day-1">Day 1</a></p>
+<p><strong>Week 0:</strong> <a href="#day-0">Day 0</a>, <a href="#day-1">Day 1</a>, <a href="#day-2">Day 2</a></p>
 
 <h2>
 <a id="description" class="anchor" href="#description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Description</h2>
@@ -207,12 +207,55 @@ homework: 67.3333333333333
 <h3>
 <a id="day-2" class="anchor" href="#day-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Day 2</h3>
 
-<p>Theory of computation, programming paradigms. More Swift topics including data types, arrays, and functions. Binary, ASCII, basic encryption.</p>
+<p>Theory of computation, programming paradigms. Closures, lambdas, higher-order functions.</p>
+
+<h4>
+<a id="source-1" class="anchor" href="#source-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Source</h4>
+
+<ol>
+<li>
+<a href="https://github.com/danallan/swift-precop/blob/master/day-2/staff.zip?raw=true">Staff solutions</a> for zip with optional ints and Morse.</li>
+<li><a href="https://github.com/danallan/swift-precop/blob/master/day-2/lambda.zip?raw=true">Closures, anonymous functions, and higher-order functions</a></li>
+</ol>
+
+<h4>
+<a id="youtube" class="anchor" href="#youtube" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>YouTube</h4>
+
+<p>Provided for fun, each offers a little more information on topics addressed in class.</p>
+
+<ol>
+<li><a href="https://www.youtube.com/watch?v=92WHN-pAFCs">Halting problem</a></li>
+<li><a href="https://www.youtube.com/watch?v=SrU9YDoXE88">Vsauce: how to count past infinity</a></li>
+</ol>
+
+<h4>
+<a id="homework-2" class="anchor" href="#homework-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Homework</h4>
+
+<ol>
+<li>Create a <code>reduce</code> function that is higher-order. It should accept an array of doubles (<code>[Double]</code>), an initial value <code>i</code> of type <code>Double</code>, and a function <code>f</code>, which itself takes as parameter two <code>Double</code> values and returns a <code>Double</code>. The function calls <code>f</code> first with the initial condition and the first element in the list, and stores the output. It then takes the output, and calls <code>f</code> with the output and the next element in the list, and so on. In short, it combines all of the elements in the list to a single value by relying on a function <code>f</code> to do the combination. Below is a sample of how you might call the function, which when run should return the value <code>10.0</code>, since it sums the values in the list.</li>
+</ol>
+
+<pre><code>reduce([1.0, 2.0, 3.0, 4.0], i: 0.0, f: { $0 + $1 })
+</code></pre>
+
+<ol>
+<li>Use the <code>mapper</code>, <code>filter</code>, and <code>reduce</code> HOFs to achieve the following:
+
+<ol>
+<li>Multiple all elements of a list together.</li>
+<li>Transform an array of values represented in Fahrenheit to Celsius.</li>
+<li>Find the largest element of a list.</li>
+<li>Transform a double array into it's reciprocal values. Be sure to get rid of 0s! For example: <code>[-0.5, 0, 8]</code> should become to <code>[-2, 0.125]</code>
+</li>
+</ol>
+</li>
+<li>More to come very soon!</li>
+</ol>
 
 <h3>
 <a id="day-3" class="anchor" href="#day-3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Day 3</h3>
 
-<p>Algorithmic complexity, parallelism. Functions, dictionaries, closures, lambda.</p>
+<p>Binary, ASCII, basic encryption. Algorithmic complexity, parallelism. Functions, dictionaries, closures, lambda.</p>
 
 <h3>
 <a id="day-4" class="anchor" href="#day-4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Day 4</h3>
