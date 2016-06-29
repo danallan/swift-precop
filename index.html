@@ -252,7 +252,7 @@ homework: 67.3333333333333
 </ol>
 </li>
 <li>More to come soon!</li>
-<li>Write a function, called <code>curry</code>, that accepts a function that normally requires two <code>Double</code> parameters (like <code>pow</code>), and allows partial application of that function. For example, although we'd normally run <code>pow(2, 3)</code>, perhaps we only want to partially apply the function as follows:</li>
+<li>Write a function, called <code>curry</code>, that accepts a function that normally requires two <code>Double</code> parameters (like <code>pow</code>), and allows partial application of that function. In other words, although we'd normally call <code>pow(x, y)</code>, after we pass it to curry we should get a new function, <code>exp</code>, that allows <code>exp(x)(y)</code>. More specifically, although we'd normally run <code>pow(2, 3)</code>, perhaps we only want to partially apply the function as follows:</li>
 </ol>
 
 <pre><code>let exp = curry(pow)
