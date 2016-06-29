@@ -231,6 +231,8 @@ homework: 67.3333333333333
 <h4>
 <a id="homework-2" class="anchor" href="#homework-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Homework</h4>
 
+<p>Try to complete all of the below problems.</p>
+
 <ol>
 <li>Create a <code>reduce</code> function that is higher-order. It should accept an array of doubles (<code>[Double]</code>), an initial value <code>i</code> of type <code>Double</code>, and a function <code>f</code>, which itself takes as parameter two <code>Double</code> values and returns a <code>Double</code>. The function calls <code>f</code> first with the initial condition and the first element in the list, and stores the output. It then takes the output, and calls <code>f</code> with the output and the next element in the list, and so on. In short, it combines all of the elements in the list to a single value by relying on a function <code>f</code> to do the combination. Below is a sample of how you might call the function, which when run should return the value <code>10.0</code>, since it sums the values in the list.</li>
 </ol>
@@ -249,8 +251,14 @@ homework: 67.3333333333333
 </li>
 </ol>
 </li>
-<li>More to come very soon!</li>
+<li>More to come soon!</li>
+<li>Write a function, called <code>curry</code>, that accepts a function that normally requires two <code>Double</code> parameters (like <code>pow</code>), and allows partial application of that function. For example, although we'd normally run <code>pow(2, 3)</code>, perhaps we only want to partially apply the function as follows:</li>
 </ol>
+
+<pre><code>let exp = curry(pow)
+let base = exp(2)
+base(3) // outputs 8
+</code></pre>
 
 <h3>
 <a id="day-3" class="anchor" href="#day-3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Day 3</h3>
