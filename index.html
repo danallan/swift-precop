@@ -31,7 +31,7 @@
         <h3>
 <a id="jump-to" class="anchor" href="#jump-to" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Jump to:</h3>
 
-<p><strong>Week 0:</strong> <a href="#day-0">Day 0</a>, <a href="#day-1">Day 1</a>, <a href="#day-2">Day 2</a></p>
+<p><strong>Week 0:</strong> <a href="#day-0">Day 0</a>, <a href="#day-1">Day 1</a>, <a href="#day-2">Day 2</a>, [Day 3][(#day-3)</p>
 
 <h2>
 <a id="description" class="anchor" href="#description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Description</h2>
@@ -88,8 +88,8 @@
 <li>Today's source code:
 
 <ul>
-<li><a href="https://raw.githubusercontent.com/danallan/swift-precop/master/day-0/0-basics.playground/Contents.swift">Basics</a></li>
-<li><a href="https://raw.githubusercontent.com/danallan/swift-precop/master/day-0/1-types.playground/Contents.swift">Types</a></li>
+<li><a href="https://raw.githubusercontent.com/danallan/swift-precop/master/day-0/src/0-basics.playground/Contents.swift">Basics</a></li>
+<li><a href="https://raw.githubusercontent.com/danallan/swift-precop/master/day-0/src/1-types.playground/Contents.swift">Types</a></li>
 </ul>
 </li>
 </ol>
@@ -163,11 +163,11 @@ let NUM_LINES = 11
 <a id="source" class="anchor" href="#source" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Source</h4>
 
 <ol>
-<li>Diamond staff solutions. <a href="https://raw.githubusercontent.com/danallan/swift-precop/master/day-1/diamond-cheng.playground/Contents.swift">Cheng</a> (TF from last year. Thanks, <a href="https://linkedin.com/in/ummcheng">Cheng</a>!), <a href="https://raw.githubusercontent.com/danallan/swift-precop/master/day-1/diamond-dan.playground/Contents.swift">Dan</a>.</li>
-<li><a href="https://raw.githubusercontent.com/danallan/swift-precop/master/day-1/2-arrays.playground/Contents.swift">Arrays</a></li>
-<li><a href="https://raw.githubusercontent.com/danallan/swift-precop/master/day-1/3-functions.playground/Contents.swift">Functions</a></li>
-<li><a href="https://raw.githubusercontent.com/danallan/swift-precop/master/day-1/4-optionals.playground/Contents.swift">Optionals</a></li>
-<li><a href="https://raw.githubusercontent.com/danallan/swift-precop/master/day-1/zip-tuples.playground/Contents.swift"><code>zip</code> student-supplied solution, modified to include tuples</a></li>
+<li>Diamond staff solutions. <a href="https://raw.githubusercontent.com/danallan/swift-precop/master/day-1/ans/diamond-cheng.playground/Contents.swift">Cheng</a> (TF from last year. Thanks, <a href="https://linkedin.com/in/ummcheng">Cheng</a>!), <a href="https://raw.githubusercontent.com/danallan/swift-precop/master/day-1/ans/diamond-dan.playground/Contents.swift">Dan</a>.</li>
+<li><a href="https://raw.githubusercontent.com/danallan/swift-precop/master/day-1/src/2-arrays.playground/Contents.swift">Arrays</a></li>
+<li><a href="https://raw.githubusercontent.com/danallan/swift-precop/master/day-1/src/3-functions.playground/Contents.swift">Functions</a></li>
+<li><a href="https://raw.githubusercontent.com/danallan/swift-precop/master/day-1/src/4-optionals.playground/Contents.swift">Optionals</a></li>
+<li><a href="https://raw.githubusercontent.com/danallan/swift-precop/master/day-1/src/zip-tuples.playground/Contents.swift"><code>zip</code> student-supplied solution, modified to include tuples</a></li>
 </ol>
 
 <h4>
@@ -181,7 +181,7 @@ let NUM_LINES = 11
 
 <ol>
 <li>First, read Apple's documentation on <a href="https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/CollectionTypes.html#//apple_ref/doc/uid/TP40014097-CH8-ID113">dictionaries</a>.</li>
-<li>Second, re-familiarize yourself with the gradebook functionality from today's <a href="https://raw.githubusercontent.com/danallan/swift-precop/master/day-1/3-functions.playground/Contents.swift">Functions source</a> from class to use dictionaries. Specifically, note that we have implemented two functions: <code>printGradeCount()</code> and <code>average()</code>. We intentionally did not go over dictionaries in class so that you gain some experience reading documentation to achieve a particular programming goal!</li>
+<li>Second, re-familiarize yourself with the gradebook functionality from today's <a href="https://raw.githubusercontent.com/danallan/swift-precop/master/day-1/src/3-functions.playground/Contents.swift">Functions source</a> from class to use dictionaries. Specifically, note that we have implemented two functions: <code>printGradeCount()</code> and <code>average()</code>. We intentionally did not go over dictionaries in class so that you gain some experience reading documentation to achieve a particular programming goal!</li>
 <li>Write a program that allows categorization of grades. For example, a class might have <code>exam</code> grades, <code>homework</code> grades, <code>participation</code> grades, etc. You could model this with a dictionary by having a dictionary key represent every category.</li>
 <li>For this program, <code>printGradeCount()</code> should accept a dictionary and it should then print the number of grades for each category. <code>average()</code> should accept a dictionary and print the grade average for every category. For example:</li>
 </ol>
@@ -200,7 +200,7 @@ homework: 67.3333333333333
 </code></pre>
 </li>
 <li>
-<a href="https://github.com/danallan/swift-precop/blob/master/day-1/morseCode.playground.zip?raw=true">Download this Playground</a> and follow the directions to complete the problems, which are a collection of functions related to encoding and decoding morse code. Thanks, <a href="#staff">Hari</a>!</li>
+<a href="https://github.com/danallan/swift-precop/blob/master/day-1/hw/morseCode.playground.zip?raw=true">Download this Playground</a> and follow the directions to complete the problems, which are a collection of functions related to encoding and decoding morse code. Thanks, <a href="#staff">Hari</a>!</li>
 <li>If you still have time, finish completing the Bad Credit exercise from <a href="#day-0">Day 0</a>. Or, if you've already completed it, revisit it and see if you can improve the design of the code, incorporating any lessons from today to make the code more idiomatic.</li>
 </ol>
 
@@ -214,8 +214,8 @@ homework: 67.3333333333333
 
 <ol>
 <li>
-<a href="https://github.com/danallan/swift-precop/blob/master/day-2/staff.zip?raw=true">Staff solutions</a> for zip with optional ints and Morse.</li>
-<li><a href="https://github.com/danallan/swift-precop/blob/master/day-2/lambda.zip?raw=true">Closures, anonymous functions, and higher-order functions</a></li>
+<a href="https://github.com/danallan/swift-precop/blob/master/day-2/ans/staff.zip?raw=true">Staff solutions</a> for zip with optional ints and Morse.</li>
+<li><a href="https://github.com/danallan/swift-precop/blob/master/day-2/src/lambda.zip?raw=true">Closures, anonymous functions, and higher-order functions</a></li>
 </ol>
 
 <h4>
