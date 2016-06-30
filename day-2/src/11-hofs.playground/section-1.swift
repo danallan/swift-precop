@@ -51,7 +51,7 @@ func mapper(list: [Double], f: (Double) -> Double) -> [Double]
 }
 
 
-// Create a higher-order function, one that "maps" a provided function over an entire array
+// Create a higher-order function that "filters" a list based on the result of a function
 func filter(list: [Double], f: (Double) -> Bool) -> [Double]
 {
     // a list to store the results
