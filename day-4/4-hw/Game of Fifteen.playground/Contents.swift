@@ -352,7 +352,7 @@ Int(arc4random_uniform(5))
  In comes the [Fisher-Yates shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle). This algorithm will allow us to shuffle a board with no duplicates or missing tiles into a random configuration that we will then verify is solvable. Below is some pseudocode to describe how it works. Try writing a list of numbers from 0 to 15 on a sheet of paper and perform the steps manually to see how well it behaves.
  
  1. Generate the numbers 0 through 15 in order on the board.
- 1. Start from the "end" of the board (the empty tile at the end, the lower-right corner of the board) and swap that tile with a randomly-picked tile anywhere *before* it on the board.
+ 1. Start from the "end" of the board (the empty tile at the end, the lower-right corner of the board) and swap that tile with a randomly-picked tile anywhere *before or equal* its position on the board.
  1. Move to the second-to-last tile (to the left of the lower-right corner), and randomly swap that with a randomly-picked tile anywhere before it on the board.
  1. And so on, until we reach the top-left of the board.
  
@@ -514,9 +514,6 @@ func validMove(tile: Int, board: TilePositions) -> Bool
 // Don't forget our tiles are represented -1 from what is displayed
 validMove(12, board: board) // false
 validMove(11, board: board) // true
-
-// You should also try test cases with the below board!
-let testBoard = [0,  1,  2, EMPTY_TILE, 4, 5,  6,  3, 8, 9, 10,  7, 12, 13, 14, 11]
 
 // TODO: are there other boards and moves you should try?
 
