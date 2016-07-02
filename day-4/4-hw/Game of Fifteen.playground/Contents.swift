@@ -356,7 +356,7 @@ Int(arc4random_uniform(5))
  1. Move to the second-to-last tile (to the left of the lower-right corner), and randomly swap that with a randomly-picked tile anywhere before it on the board.
  1. And so on, until we reach the top-left of the board.
  
- It is the "randomly-picked tile" part where we will leverage the `arc4random_uniform()` function to randomly pick a row and column for the tile swap.
+ It is the "randomly-picked tile" part where we will leverage the `arc4random_uniform()` function to randomly pick an index for the tile swap.
 
  There's one more thing you'll need to accomplish the shuffle: swap values. Remember the `swap()` we defined in class? It's actually a Swift built-in function! Well, technically speaking, `swap()` is provided by the standard library that's automatically included with the language, but we can think of it as "built-in".
  
