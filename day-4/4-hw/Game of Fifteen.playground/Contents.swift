@@ -176,7 +176,7 @@ func indexToPosition(index: Int) -> Position
 //TODO: test this. Try all possible indices!
 
 /*:
- ### Printing a one-dimensional board.
+ ### Printing a one-dimensional board
  
  We'll also want the ability, like the two-dimensional board, to print out our single dimensional representation for debugging purposes. Complete that function below. Don't forget to properly handle the `EMPTY_TILE` and add `1` to every tile.
  */
@@ -479,7 +479,23 @@ func won(board: TilePositions) -> Bool
 }
  
 // TODO add tests to verify your function
+
+/*:
+ ### Printing a `TilePositions` board
  
+ In order to check our functions below, you will find it handy to create a function that prints out the game board. Write `printBoard()`, below, which accepts a `TilePositions` board and does precisely that. Don't forget to handle the `EMPTY_TILE` and add one to the tile values!
+
+ */
+/* printBoard(_:)
+ * Prints a TilePositions board to the console.
+ */
+func printBoard(board: TilePositions)
+{
+    /* TODO */
+}
+
+printBoard(board)
+
 /*:
  
  Now that we've settled on a representation of the board during play, let's finish up the necessary functions for the game mechanics.
@@ -546,7 +562,7 @@ validMove(11, board: board) // true
 /* TODO */
 
 // The below should change the board and swap the `11` tile with the empty
-// board = slideTile(11, board)
+// board = slideTile(11, board: board)
 // TODO, do lots of tests with your slideTile() function
 
 
