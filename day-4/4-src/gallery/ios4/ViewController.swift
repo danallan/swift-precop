@@ -128,26 +128,34 @@ class ViewController: UIViewController {
                 return
             }
 
-            do {
+            do
+            {
                 let parsed = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers)
                 
 
                 // success!
                 print("Success!")
                 
-                // store album and array info
-                self.album = parsed["album"] as! String
-                self.photos = parsed["photos"]! as! NSArray
-                
-                // set gallery title
-                self.titleLabel.title = "\(self.album)"
-                
-                self.fetchNextImage()
+                // fetched data in the background, pass back to main thread to update UI
+                dispatch_async(dispatch_get_main_queue()) {
 
-            } catch {
+                    // store album and array info
+                    self.album = parsed["album"] as! String
+                    self.photos = parsed["photos"]! as! NSArray
+                    
+                    // set gallery title
+                    self.titleLabel.title = "\(self.album)"
+                    
+                    self.fetchNextImage()
+                }
+            }
+            catch
+            {
                 // print errors to the console
                 print("JSON parse error: \(error)")
-                self.failure()
+                dispatch_async(dispatch_get_main_queue()) {
+                    self.failure()
+                }
                 return
             }
 
