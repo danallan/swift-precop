@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GoF_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view tag="-1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a2k-14-jAC">
+                                <rect key="frame" x="75" y="75" width="450" height="450"/>
+                                <color key="backgroundColor" red="0.57647058819999997" green="0.82745098039999998" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="a2k-14-jAC" secondAttribute="height" multiplier="1:1" id="1Ns-QV-riL"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Countdown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsr-fU-syU">
+                                <rect key="frame" x="256" y="533" width="88" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nsr-fU-syU" firstAttribute="top" secondItem="a2k-14-jAC" secondAttribute="bottom" constant="8" id="6u2-BK-pIC"/>
+                            <constraint firstItem="a2k-14-jAC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8o3-A5-CUL"/>
+                            <constraint firstItem="a2k-14-jAC" firstAttribute="width" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.75" id="8tF-6U-AxK"/>
+                            <constraint firstItem="a2k-14-jAC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" priority="750" id="KAJ-9u-7zs"/>
+                            <constraint firstItem="Nsr-fU-syU" firstAttribute="centerX" secondItem="a2k-14-jAC" secondAttribute="centerX" id="Nr6-1H-8QF"/>
+                            <constraint firstItem="a2k-14-jAC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SG6-Jb-65n"/>
+                            <constraint firstItem="a2k-14-jAC" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.75" id="dfp-HJ-8sR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="boardView" destination="a2k-14-jAC" id="zce-CA-cYy"/>
+                        <outlet property="countdownLabel" destination="Nsr-fU-syU" id="g6y-2X-NUs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="311"/>
+        </scene>
+    </scenes>
+</document>
