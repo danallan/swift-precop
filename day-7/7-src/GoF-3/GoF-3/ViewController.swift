@@ -43,6 +43,7 @@ class ViewController: UIViewController {
     
     func tileTapped(sender: UIButton)
     {
+        twoButtonAlert()
         if animating
         {
             print("tileTapped: already animating!! abort mission!!!")
